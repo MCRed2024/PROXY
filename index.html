@@ -85,15 +85,15 @@
             
             // Compare with the stored hash
             if (passcodeHash === correctPasscodeHash) {
-                localStorage.setItem('correctPasscodeEntered', true);
+                localStorage.setItem('correctPasscodeEntered', 'true');
                 document.getElementById('passcode-form').style.display = 'none'; // Hide the passcode form
                 document.getElementById('content').style.display = 'block'; // Show the main content
             } else {
-                if (variable === true) {
+                if (variable === 'true') {
                     document.getElementById('passcode-form').style.display = 'none'; // Hide the passcode form
                     document.getElementById('content').style.display = 'block'; // Show the main content
                 } else {
-                alert("Incorrect passcode. Please try again.");
+                    alert("Incorrect passcode. Please try again.");
             }
         });
     </script>
